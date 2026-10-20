@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>云湖公园 · 智慧公园数字化管理与运营 DEMO</title>
+<meta name="description" content="云湖公园智慧公园静态演示:运营管理后台 + 游客小程序">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  background:linear-gradient(160deg,#e6f2ea 0%,#f5f9f6 45%,#eef5f0 100%);
+  color:#1c2b23; min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center;
+  padding:40px 20px;
+}
+.wrap { width:100%; max-width:920px; }
+header { text-align:center; margin-bottom:34px; }
+.logo {
+  width:64px; height:64px; border-radius:20px; background:linear-gradient(135deg,#1a7a4c,#3aa870);
+  display:inline-flex; align-items:center; justify-content:center; font-size:32px;
+  box-shadow:0 10px 24px rgba(26,122,76,.28); margin-bottom:18px;
+}
+h1 { font-size:26px; font-weight:800; letter-spacing:.5px; }
+h1 b { color:#1a7a4c; font-weight:800; }
+.sub { margin-top:10px; color:#5a6f63; font-size:14.5px; line-height:1.75; }
+.cards { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+.card {
+  display:block; text-decoration:none; background:#fff; border-radius:18px; padding:26px 24px 22px;
+  border:1px solid #e2ece5; box-shadow:0 6px 18px rgba(28,43,35,.06);
+  transition:transform .22s, box-shadow .22s, border-color .22s;
+}
+.card:hover { transform:translateY(-4px); box-shadow:0 14px 30px rgba(28,43,35,.12); border-color:#bcd9c6; }
+.card .ic { width:52px; height:52px; border-radius:14px; display:flex; align-items:center; justify-content:center; font-size:26px; margin-bottom:16px; }
+.card.admin .ic { background:#e8f1fb; }
+.card.mp .ic { background:#eaf7f0; }
+.card h2 { font-size:18px; font-weight:700; margin-bottom:8px; }
+.card p { font-size:13.5px; color:#5a6f63; line-height:1.8; }
+.tags { margin-top:14px; display:flex; flex-wrap:wrap; gap:6px; }
+.tag { font-size:11.5px; color:#1a7a4c; background:#eaf7f0; border-radius:999px; padding:3px 10px; }
+.card.admin .tag { color:#1565c0; background:#e8f1fb; }
+.go { margin-top:16px; font-size:13px; font-weight:600; color:#1a7a4c; }
+.card.admin .go { color:#1565c0; }
+footer { margin-top:34px; text-align:center; font-size:12.5px; color:#7d9184; line-height:1.9; }
+footer a { color:#1a7a4c; text-decoration:none; font-weight:600; }
+@media (max-width:720px) { .cards { grid-template-columns:1fr; } h1 { font-size:21px; } body { padding:28px 16px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">🌳</div>
+    <h1>云湖公园 · 智慧公园数字化管理与运营 <b>DEMO</b></h1>
+    <div class="sub">覆盖「运营管理后台 + 游客小程序」的完整静态演示<br>纯前端单文件,无需登录、无需安装,点击卡片即刻体验</div>
+  </header>
+  <section class="cards">
+    <a class="card admin" href="智慧公园管理后台.html">
+      <div class="ic">🖥️</div>
+      <h2>智慧运营管理后台</h2>
+      <p>面向园区管理方:数据驾驶舱、场馆预订、停车与租赁、生态与能耗监测、设备物联、AED 与应急指挥、会员与营销等 20+ 模块。</p>
+      <div class="tags"><span class="tag">数据驾驶舱</span><span class="tag">运营监管</span><span class="tag">应急指挥</span></div>
+      <div class="go">建议使用电脑端浏览 →</div>
+    </a>
+    <a class="card mp" href="智慧公园小程序DEMO.html">
+      <div class="ic">📱</div>
+      <h2>智慧公园小程序</h2>
+      <p>面向游客:入园预约、场馆预订、AR 园区打卡、AI 智能体问答、运动组队与排行榜、生态科普、积分商城等。</p>
+      <div class="tags"><span class="tag">AI 智能体</span><span class="tag">AR 打卡</span><span class="tag">运动社交</span></div>
+      <div class="go">手机优先 · 电脑端以手机屏幕呈现 →</div>
+    </a>
+  </section>
+  <footer>
+    云湖公园 DEMO · 静态演示数据,非真实运营信息<br>
+    <a href="https://github.com/Goomeezcl/SmartPK">GitHub 仓库</a> · 由 GitHub Pages 部署
+  </footer>
+</div>
+</body>
+</html>
